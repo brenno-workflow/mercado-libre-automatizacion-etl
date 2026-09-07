@@ -51,7 +51,7 @@ def extract_publications_active(url, query, site_id, limit, domain):
                 __params_items = {"limit": limit, "offset": __offset}
                 try: __data = get_request(__url_items, params=__params_items)
                 except Exception as e: 
-                    #print(f"Erro ao buscar publicações do produto:\n{__product_id}: {e}")
+                    print(f"Erro ao buscar publicações do produto:\n{__product_id}: {e}")
                     break
 
                 __items = __data.get("results", [])

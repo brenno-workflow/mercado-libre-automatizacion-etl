@@ -180,19 +180,34 @@ Criar um arquivo `.env` na raiz do projeto.
 Exemplo:
 
 ```env
-ML_URL=https://api.mercadolibre.com
+# Credenciais
+ML_APP_ID='1234567891234567'
+ML_CLIENT_SECRET='1234567891234567891'
+ML_ACCESS_TOKEN='APP_USR-1234567891234567-123456-12345678912345678912345678912345-1234567891'
+ML_REFRESH_TOKEN='TG-123456789123456789123456-1234567891'
 
-ML_PRODUCTS=products
-ML_SEARCH=search
-ML_ITEMS=items
-ML_CURRENCY=currency_conversions
+# API
+ML_URL='https://api.mercadolibre.com'
 
-ML_SITE_ID=MLA
-ML_SEARCH_QUERY=Samsung Galaxy
-ML_SEARCH_DOMAIN=MLA-CELLPHONES
-ML_SEARCH_PAGE_SIZE=50
+# Token
+ML_AUTH='oauth/token'
 
-ML_ACCESS_TOKEN=SEU_ACCESS_TOKEN
+# Site
+ML_SITE_ID='MLA'
+
+# Endpoints
+ML_PRODUCTS='products'
+ML_SEARCH='search'
+ML_ITEMS='items'
+ML_CURRENCY='currency_conversions'
+
+#DATABASE
+ML_DATABASE='mercado_livre.db'
+
+# Query
+ML_SEARCH_QUERY='Samsung Galaxy S24'
+ML_SEARCH_DOMAIN='MLA-CELLPHONES'
+ML_SEARCH_PAGE_SIZE='50'
 ```
 
 ### Segurança

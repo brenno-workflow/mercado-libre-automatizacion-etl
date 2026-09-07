@@ -26,5 +26,5 @@ def extract_item_details(url, item_id):
 
     # Exception
     except Exception as e:
-        #print(f"Erro ao buscar item {item_id}:\n{e}")
+        print(f"Erro ao buscar item {item_id}:\n{e}")
         return None
