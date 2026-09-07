@@ -795,6 +795,71 @@ Essa limitação foi considerada na implementação e não foram utilizados dado
 
 A implementação atual utiliza SQLite pela simplicidade de execução local.
 
+Para uma versão de produção ou maior aderência aos requisitos de infraestrutura do desafio, recomenda-se migrar para:
+
+* PostgreSQL; ou
+* BigQuery.
+
+---
+
+# Melhorias futuras
+
+Algumas evoluções possíveis seriam:
+
+### Banco
+
+Migrar de SQLite para PostgreSQL ou BigQuery.
+
+### Performance
+
+Utilizar consultas em lote quando aplicável, reduzindo a quantidade de requisições individuais.
+
+### Paginação
+
+Implementar controle baseado no `total` retornado pela API, além da condição de tamanho da página.
+
+### Resiliência
+
+Adicionar:
+
+* retry automático;
+* backoff exponencial;
+* logging estruturado;
+* tratamento específico para HTTP 429;
+* monitoramento das falhas de API.
+
+### Qualidade dos dados
+
+Adicionar validações de:
+
+* campos obrigatórios;
+* tipos;
+* valores nulos;
+* moeda;
+* duplicidade de `item_id`.
+
+### Histórico
+
+Criar uma tabela específica para controlar cada execução do ETL, permitindo registrar:
+
+* início;
+* fim;
+* quantidade de registros;
+* status;
+* erros.
+
+### Observabilidade
+
+Adicionar logs estruturados e métricas para acompanhar:
+
+```text
+tempo de execução
+quantidade de produtos
+quantidade de publicações
+quantidade de erros
+quantidade de registros carregados
+```
+
 ---
 
 # Referências
