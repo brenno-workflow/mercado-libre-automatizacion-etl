@@ -436,6 +436,16 @@ etl_publications
 
 ---
 
+## DDL
+
+O script de criação da tabela está disponível em:
+
+`sql/ddl.sql`
+
+O DDL pode ser executado diretamente no SQLite para criar a estrutura utilizada pelo ETL.
+
+---
+
 # JOB_RUN
 
 Cada execução do ETL recebe um único timestamp:
