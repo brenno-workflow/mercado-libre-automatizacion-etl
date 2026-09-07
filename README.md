@@ -883,6 +883,6 @@ quantidade de registros carregados
 
 # Autor
 
-**Brenno Brossi**
+**Brenno C. Brossi**
 
 Projeto desenvolvido para avaliação técnica de Automação ETL com Python.
