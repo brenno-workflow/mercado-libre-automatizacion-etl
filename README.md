@@ -129,6 +129,8 @@ mercado-libre-automatizacion-etl/
 │   └── db.py
 │
 ├── .env
+├── .env.example
+├── .gitattributes
 ├── .gitignore
 ├── main.py
 ├── requirements.txt
